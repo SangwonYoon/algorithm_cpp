@@ -23,13 +23,13 @@ void quickSort(int *arr,int s, int e){
 }
 
 void sort(int *arr, int size){
-    quickSort(arr,0,9);
+    quickSort(arr,0,size-1);
 }
 
 int main(){
 
   int arr[10] = {1,5,9,4,7,10,6,2,8,3};
-  quickSort(arr,0,9);
+  sort(arr,10);
 
   for(int i = 0; i< 10; i++){
     cout << arr[i] << endl;
